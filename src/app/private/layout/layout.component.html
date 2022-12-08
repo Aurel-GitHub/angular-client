@@ -1,2 +1,25 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="sidenav.toggle();">
+     <mat-icon>menu</mat-icon>
+   </button>
+   <span>Easy Budget</span>
+   <span class="example-spacer"></span>
+   <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>account_box</mat-icon>
+  </button>
+ </mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav>
+        <mat-nav-list>
+            <a mat-list-item ><mat-icon>dashboard</mat-icon> Dashboard</a>
+            <a mat-list-item ><mat-icon>account_box</mat-icon>Expense</a>
+            <a mat-list-item ><mat-icon>insert_chart_outlined</mat-icon>Budget</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div style="height: 88vh">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

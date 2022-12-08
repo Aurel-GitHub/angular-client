@@ -5,8 +5,7 @@ import { ExpenseComponent } from './expense/expense.component';
 import { BudgetComponent } from './budget/budget.component';
 import { PrivateRoutingModule } from './private-routing.module';
 import { LayoutComponent } from './layout/layout.component';
-import { LayoutModule } from "./layout/layout.module";
-import { HeaderModule } from './layout/header/header.module';
+import { MaterialModule } from '../material.module';
 
 
 @NgModule({
@@ -18,9 +17,8 @@ import { HeaderModule } from './layout/header/header.module';
     ],
     imports: [
         CommonModule,
+        MaterialModule,
         PrivateRoutingModule,
-        LayoutModule,
-        HeaderModule
     ]
 })
 export class PrivateModule { }
