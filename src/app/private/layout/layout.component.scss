@@ -1,3 +1,18 @@
 .example-spacer {
     flex: 1 1 auto;
   }
+
+mat-nav-list {
+    .mat-nav-item {
+      display: flex;
+      flex-direction: row ;
+      padding: 1rem;
+      cursor: pointer;
+
+      mat-icon {
+        margin-right: 5px;
+      }
+    }
+}
+
+

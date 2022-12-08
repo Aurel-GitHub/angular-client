@@ -10,11 +10,11 @@
  </mat-toolbar>
 
 <mat-sidenav-container>
-    <mat-sidenav #sidenav>
-        <mat-nav-list>
-            <a mat-list-item ><mat-icon>dashboard</mat-icon> Dashboard</a>
-            <a mat-list-item ><mat-icon>account_box</mat-icon>Expense</a>
-            <a mat-list-item ><mat-icon>insert_chart_outlined</mat-icon>Budget</a>
+    <mat-sidenav #sidenav  mode="side">
+        <mat-nav-list >
+            <div mat-list-item matRipple class="mat-nav-item" ><mat-icon>dashboard</mat-icon> Dashboard</div>
+            <div mat-list-item matRipple class="mat-nav-item"><mat-icon>account_box</mat-icon>Expense</div>
+            <div mat-list-item matRipple class="mat-nav-item"><mat-icon>insert_chart_outlined</mat-icon>Budget</div>
         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
