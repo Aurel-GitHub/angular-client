@@ -8,19 +8,14 @@ import { LayoutComponent } from './layout/layout.component';
 import { MaterialModule } from '../material.module';
 import { ProfilComponent } from './profil/profil.component';
 
-
 @NgModule({
-    declarations: [
-        HomeComponent,
-        ExpenseComponent,
-        BudgetComponent,
-        LayoutComponent,
-        ProfilComponent,
-    ],
-    imports: [
-        CommonModule,
-        MaterialModule,
-        PrivateRoutingModule,
-    ]
+  declarations: [
+    HomeComponent,
+    ExpenseComponent,
+    BudgetComponent,
+    LayoutComponent,
+    ProfilComponent,
+  ],
+  imports: [CommonModule, MaterialModule, PrivateRoutingModule],
 })
-export class PrivateModule { }
+export class PrivateModule {}

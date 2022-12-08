@@ -1,25 +1,38 @@
 <mat-toolbar>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="sidenav.toggle();">
-     <mat-icon>menu</mat-icon>
-   </button>
-   <span>Easy Budget</span>
-   <span class="example-spacer"></span>
-   <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+    (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Easy Budget</span>
+  <span class="example-spacer"></span>
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with share icon">
     <mat-icon>account_box</mat-icon>
   </button>
- </mat-toolbar>
+</mat-toolbar>
 
 <mat-sidenav-container>
-    <mat-sidenav #sidenav  mode="side">
-        <mat-nav-list >
-            <div mat-list-item matRipple class="mat-nav-item" ><mat-icon>dashboard</mat-icon> Dashboard</div>
-            <div mat-list-item matRipple class="mat-nav-item"><mat-icon>account_box</mat-icon>Expense</div>
-            <div mat-list-item matRipple class="mat-nav-item"><mat-icon>insert_chart_outlined</mat-icon>Budget</div>
-        </mat-nav-list>
-    </mat-sidenav>
-    <mat-sidenav-content>
-        <div style="height: 88vh">
-            <router-outlet></router-outlet>
-        </div>
-    </mat-sidenav-content>
+  <mat-sidenav #sidenav mode="side">
+    <mat-nav-list>
+      <div mat-list-item matRipple class="mat-nav-item">
+        <mat-icon>dashboard</mat-icon> Dashboard
+      </div>
+      <div mat-list-item matRipple class="mat-nav-item">
+        <mat-icon>account_box</mat-icon>Expense
+      </div>
+      <div mat-list-item matRipple class="mat-nav-item">
+        <mat-icon>insert_chart_outlined</mat-icon>Budget
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="height: 88vh">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
 </mat-sidenav-container>

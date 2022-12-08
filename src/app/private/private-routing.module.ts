@@ -7,14 +7,16 @@ import { LayoutComponent } from './layout/layout.component';
 import { ProfilComponent } from './profil/profil.component';
 
 const routes: Routes = [
-    { path: '', component: LayoutComponent,
-        children: [
-            { path: '', component: HomeComponent },
-            { path: 'expense', component: ExpenseComponent },
-            { path: 'budget', component: BudgetComponent },
-            { path: 'profil', component: ProfilComponent }
-        ]
-    }
+  {
+    path: '',
+    component: LayoutComponent,
+    children: [
+      { path: '', component: HomeComponent },
+      { path: 'expense', component: ExpenseComponent },
+      { path: 'budget', component: BudgetComponent },
+      { path: 'profil', component: ProfilComponent },
+    ],
+  },
 ];
 
 @NgModule({
