@@ -1,6 +1,14 @@
 .example-spacer {
     flex: 1 1 auto;
-  }
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.main-section {
+  height: 100vh;
+}
 
 mat-nav-list {
     .mat-nav-item {

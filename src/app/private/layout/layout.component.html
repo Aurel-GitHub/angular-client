@@ -6,9 +6,10 @@
     (click)="sidenav.toggle()">
     <mat-icon>menu</mat-icon>
   </button>
-  <span>Easy Budget</span>
+  <span [routerLink]="['']" class="logo">Easy Budget</span>
   <span class="example-spacer"></span>
   <button
+    [routerLink]="['settings']"
     mat-icon-button
     class="example-icon"
     aria-label="Example icon-button with share icon">
@@ -19,19 +20,19 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav mode="side">
     <mat-nav-list>
-      <div mat-list-item matRipple class="mat-nav-item">
+      <div mat-list-item matRipple class="mat-nav-item" [routerLink]="['']" >
         <mat-icon>dashboard</mat-icon> Dashboard
       </div>
-      <div mat-list-item matRipple class="mat-nav-item">
+      <div mat-list-item matRipple class="mat-nav-item" [routerLink]="['expense']">
         <mat-icon>account_box</mat-icon>Expense
       </div>
-      <div mat-list-item matRipple class="mat-nav-item">
+      <div mat-list-item matRipple class="mat-nav-item" [routerLink]="['budget']">
         <mat-icon>insert_chart_outlined</mat-icon>Budget
       </div>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <div style="height: 88vh">
+    <div class="main-section">
       <router-outlet></router-outlet>
     </div>
   </mat-sidenav-content>

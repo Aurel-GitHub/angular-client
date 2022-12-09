@@ -6,7 +6,7 @@ import { BudgetComponent } from './budget/budget.component';
 import { PrivateRoutingModule } from './private-routing.module';
 import { LayoutComponent } from './layout/layout.component';
 import { MaterialModule } from '../material.module';
-import { ProfilComponent } from './profil/profil.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { ProfilComponent } from './profil/profil.component';
     ExpenseComponent,
     BudgetComponent,
     LayoutComponent,
-    ProfilComponent,
+    SettingsComponent,
   ],
   imports: [CommonModule, MaterialModule, PrivateRoutingModule],
 })

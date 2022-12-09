@@ -4,7 +4,7 @@ import { BudgetComponent } from './budget/budget.component';
 import { ExpenseComponent } from './expense/expense.component';
 import { HomeComponent } from './home/home.component';
 import { LayoutComponent } from './layout/layout.component';
-import { ProfilComponent } from './profil/profil.component';
+import {SettingsComponent} from "./settings/settings.component";
 
 const routes: Routes = [
   {
@@ -14,7 +14,7 @@ const routes: Routes = [
       { path: '', component: HomeComponent },
       { path: 'expense', component: ExpenseComponent },
       { path: 'budget', component: BudgetComponent },
-      { path: 'profil', component: ProfilComponent },
+      { path: 'settings', component: SettingsComponent }
     ],
   },
 ];
