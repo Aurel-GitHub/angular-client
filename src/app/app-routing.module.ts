@@ -7,6 +7,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./private/private.module').then(m => m.PrivateModule),
   },
+  { path: '**', redirectTo: '' },
 ];
 
 @NgModule({
