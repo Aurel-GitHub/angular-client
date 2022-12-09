@@ -3,9 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '', loadChildren: () => import('./private/private.module')
-      .then(module => module.PrivateModule)
-  }
+    path: '',
+    loadChildren: () =>
+      import('./private/private.module').then(m => m.PrivateModule),
+  },
 ];
 
 @NgModule({

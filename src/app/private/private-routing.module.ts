@@ -4,17 +4,25 @@ import { BudgetComponent } from './budget/budget.component';
 import { ExpenseComponent } from './expense/expense.component';
 import { HomeComponent } from './home/home.component';
 import { LayoutComponent } from './layout/layout.component';
-import {SettingsComponent} from "./settings/settings.component";
+import { SettingsComponent } from './settings/settings.component';
 
 const routes: Routes = [
   {
     path: '',
     component: LayoutComponent,
     children: [
-      { path: '', component: HomeComponent },
-      { path: 'expense', component: ExpenseComponent },
-      { path: 'budget', component: BudgetComponent },
-      { path: 'settings', component: SettingsComponent }
+      { path: '', redirectTo: '', pathMatch: 'full' },
+      {
+        path: 'expense',
+        loadChildren: () =>
+          import('./expense/expense.module').then(m => m.ExpenseModule),
+      },
+      {
+        path: 'budget',
+        loadChildren: () =>
+          import('./budget/budget.module').then(m => m.BudgetModule),
+      },
+      { path: 'settings', component: SettingsComponent },
     ],
   },
 ];
